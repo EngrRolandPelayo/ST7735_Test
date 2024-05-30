@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xB</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../../ST7735_Driver;../../ST7735_Driver/Fonts;..\..\stm32-st7735-master\st7735;..\..\stm32-st7735-master\Inc;..\..\stm32-st7735-master\Src</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;..\Drivers\ST7735</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -501,7 +501,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>ST7735_Driver</GroupName>
+          <GroupName>Drivers/ST7735</GroupName>
           <Files>
             <File>
               <FileName>fonts.c</FileName>

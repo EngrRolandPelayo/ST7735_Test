@@ -28,7 +28,7 @@ st3775_test\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 st3775_test\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h
 st3775_test\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 st3775_test\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-st3775_test\main.o: ..\..\stm32-st7735-master\st7735\st7735.h
-st3775_test\main.o: ..\..\stm32-st7735-master\st7735\fonts.h
+st3775_test\main.o: ..\Drivers\ST7735\st7735.h
+st3775_test\main.o: ..\Drivers\ST7735\fonts.h
 st3775_test\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-st3775_test\main.o: ..\..\stm32-st7735-master\st7735\testimg.h
+st3775_test\main.o: ..\Drivers\ST7735\testimg.h

@@ -3,7 +3,7 @@
 <title>Static Call Graph - [ST3775_Test\ST3775_Test.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ST3775_Test\ST3775_Test.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Wed May 29 20:55:41 2024
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Thu May 30 11:38:54 2024
 <BR><P>
 <H3>Maximum Stack Usage =        296 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -643,7 +643,7 @@ Global Symbols
 <P><STRONG><a name="[10]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f1xx_it.o(i.PendSV_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f103xb.o(RESET)
 </UL>
-<P><STRONG><a name="[6f]"></a>ST7735_DrawPixel</STRONG> (Thumb, 60 bytes, Stack size 24 bytes, st7735.o(i.ST7735_DrawPixel))
+<P><STRONG><a name="[6f]"></a>ST7735_DrawPixel</STRONG> (Thumb, 60 bytes, Stack size 24 bytes, st7735_1.o(i.ST7735_DrawPixel))
 <BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = ST7735_DrawPixel &rArr; ST7735_SetAddressWindow &rArr; ST7735_WriteData &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_Unselect
@@ -654,7 +654,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loop
 </UL>
 
-<P><STRONG><a name="[76]"></a>ST7735_FillRectangle</STRONG> (Thumb, 144 bytes, Stack size 32 bytes, st7735.o(i.ST7735_FillRectangle))
+<P><STRONG><a name="[76]"></a>ST7735_FillRectangle</STRONG> (Thumb, 144 bytes, Stack size 32 bytes, st7735_1.o(i.ST7735_FillRectangle))
 <BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = ST7735_FillRectangle &rArr; ST7735_SetAddressWindow &rArr; ST7735_WriteData &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_Transmit
@@ -666,7 +666,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_FillScreen
 </UL>
 
-<P><STRONG><a name="[77]"></a>ST7735_FillScreen</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, st7735.o(i.ST7735_FillScreen))
+<P><STRONG><a name="[77]"></a>ST7735_FillScreen</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, st7735_1.o(i.ST7735_FillScreen))
 <BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = ST7735_FillScreen &rArr; ST7735_FillRectangle &rArr; ST7735_SetAddressWindow &rArr; ST7735_WriteData &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_FillRectangle
@@ -674,7 +674,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loop
 </UL>
 
-<P><STRONG><a name="[78]"></a>ST7735_Init</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, st7735.o(i.ST7735_Init))
+<P><STRONG><a name="[78]"></a>ST7735_Init</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, st7735_1.o(i.ST7735_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = ST7735_Init &rArr; ST7735_ExecuteCommandList &rArr; ST7735_WriteData &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
@@ -686,7 +686,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init
 </UL>
 
-<P><STRONG><a name="[73]"></a>ST7735_Unselect</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, st7735.o(i.ST7735_Unselect))
+<P><STRONG><a name="[73]"></a>ST7735_Unselect</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, st7735_1.o(i.ST7735_Unselect))
 <BR><BR>[Calls]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_WriteString
@@ -695,7 +695,7 @@ Global Symbols
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_FillRectangle
 </UL>
 
-<P><STRONG><a name="[7a]"></a>ST7735_WriteString</STRONG> (Thumb, 94 bytes, Stack size 48 bytes, st7735.o(i.ST7735_WriteString))
+<P><STRONG><a name="[7a]"></a>ST7735_WriteString</STRONG> (Thumb, 94 bytes, Stack size 48 bytes, st7735_1.o(i.ST7735_WriteString))
 <BR><BR>[Stack]<UL><LI>Max Depth = 248<LI>Call Chain = ST7735_WriteString &rArr; ST7735_WriteChar &rArr; ST7735_SetAddressWindow &rArr; ST7735_WriteData &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_Unselect
@@ -827,7 +827,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit
 </UL>
 
-<P><STRONG><a name="[74]"></a>ST7735_ExecuteCommandList</STRONG> (Thumb, 70 bytes, Stack size 24 bytes, st7735.o(i.ST7735_ExecuteCommandList))
+<P><STRONG><a name="[74]"></a>ST7735_ExecuteCommandList</STRONG> (Thumb, 70 bytes, Stack size 24 bytes, st7735_1.o(i.ST7735_ExecuteCommandList))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = ST7735_ExecuteCommandList &rArr; ST7735_WriteData &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
@@ -837,7 +837,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_Init
 </UL>
 
-<P><STRONG><a name="[70]"></a>ST7735_Select</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, st7735.o(i.ST7735_Select))
+<P><STRONG><a name="[70]"></a>ST7735_Select</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, st7735_1.o(i.ST7735_Select))
 <BR><BR>[Calls]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_WriteString
@@ -846,7 +846,7 @@ Local Symbols
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_FillRectangle
 </UL>
 
-<P><STRONG><a name="[71]"></a>ST7735_SetAddressWindow</STRONG> (Thumb, 66 bytes, Stack size 24 bytes, st7735.o(i.ST7735_SetAddressWindow))
+<P><STRONG><a name="[71]"></a>ST7735_SetAddressWindow</STRONG> (Thumb, 66 bytes, Stack size 24 bytes, st7735_1.o(i.ST7735_SetAddressWindow))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = ST7735_SetAddressWindow &rArr; ST7735_WriteData &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_WriteData
@@ -857,7 +857,7 @@ Local Symbols
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_WriteChar
 </UL>
 
-<P><STRONG><a name="[79]"></a>ST7735_WriteChar</STRONG> (Thumb, 144 bytes, Stack size 72 bytes, st7735.o(i.ST7735_WriteChar))
+<P><STRONG><a name="[79]"></a>ST7735_WriteChar</STRONG> (Thumb, 144 bytes, Stack size 72 bytes, st7735_1.o(i.ST7735_WriteChar))
 <BR><BR>[Stack]<UL><LI>Max Depth = 200<LI>Call Chain = ST7735_WriteChar &rArr; ST7735_SetAddressWindow &rArr; ST7735_WriteData &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_WriteData
@@ -866,7 +866,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_WriteString
 </UL>
 
-<P><STRONG><a name="[75]"></a>ST7735_WriteCommand</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, st7735.o(i.ST7735_WriteCommand))
+<P><STRONG><a name="[75]"></a>ST7735_WriteCommand</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, st7735_1.o(i.ST7735_WriteCommand))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = ST7735_WriteCommand &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_Transmit
@@ -876,7 +876,7 @@ Local Symbols
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_ExecuteCommandList
 </UL>
 
-<P><STRONG><a name="[72]"></a>ST7735_WriteData</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, st7735.o(i.ST7735_WriteData))
+<P><STRONG><a name="[72]"></a>ST7735_WriteData</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, st7735_1.o(i.ST7735_WriteData))
 <BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = ST7735_WriteData &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_Transmit

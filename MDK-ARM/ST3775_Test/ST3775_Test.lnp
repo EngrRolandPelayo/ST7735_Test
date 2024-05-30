@@ -19,8 +19,8 @@
 "st3775_test\stm32f1xx_hal_tim_ex.o"
 "st3775_test\stm32f1xx_hal_uart.o"
 "st3775_test\system_stm32f1xx.o"
-"st3775_test\fonts.o"
-"st3775_test\st7735.o"
+"st3775_test\fonts_1.o"
+"st3775_test\st7735_1.o"
 --strict --scatter "ST3775_Test\ST3775_Test.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
