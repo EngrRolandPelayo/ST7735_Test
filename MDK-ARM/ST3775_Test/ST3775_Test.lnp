@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"st3775_test\startup_stm32f103xb.o"
+"st3775_test\main.o"
+"st3775_test\stm32f1xx_it.o"
+"st3775_test\stm32f1xx_hal_msp.o"
+"st3775_test\stm32f1xx_hal_gpio_ex.o"
+"st3775_test\stm32f1xx_hal_spi.o"
+"st3775_test\stm32f1xx_hal.o"
+"st3775_test\stm32f1xx_hal_rcc.o"
+"st3775_test\stm32f1xx_hal_rcc_ex.o"
+"st3775_test\stm32f1xx_hal_gpio.o"
+"st3775_test\stm32f1xx_hal_dma.o"
+"st3775_test\stm32f1xx_hal_cortex.o"
+"st3775_test\stm32f1xx_hal_pwr.o"
+"st3775_test\stm32f1xx_hal_flash.o"
+"st3775_test\stm32f1xx_hal_flash_ex.o"
+"st3775_test\stm32f1xx_hal_exti.o"
+"st3775_test\stm32f1xx_hal_tim.o"
+"st3775_test\stm32f1xx_hal_tim_ex.o"
+"st3775_test\stm32f1xx_hal_uart.o"
+"st3775_test\system_stm32f1xx.o"
+"st3775_test\fonts.o"
+"st3775_test\st7735.o"
+--strict --scatter "ST3775_Test\ST3775_Test.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ST3775_Test.map" -o ST3775_Test\ST3775_Test.axf
